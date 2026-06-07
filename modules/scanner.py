@@ -21,8 +21,11 @@ _DIRECT_PATHS = [
     "/cgi-bin/", "/admin/", "/uploads/", "/static/", "/api/",
 ]
 
+# 블라인드 평가 보존: 타겟의 실제 파일명(victim/safe 등)을 절대 넣지 않는다.
+# 그러면 discovered_paths에 정답이 결정론적으로 박혀 "추론"이 아니라 "정답 복사"가 됨.
+# 일반적인 CGI/스크립트 이름만 둔다. (이상적으로는 SecLists 등 외부 범용 wordlist 사용)
 _NAMES = [
-    "victim", "safe", "test", "hello", "admin", "status", "info",
+    "test", "hello", "admin", "status", "info",
     "shell", "cmd", "bin", "sh", "main", "default", "login", "user",
     "search", "env", "printenv", "index", "debug", "backup", "config",
 ]

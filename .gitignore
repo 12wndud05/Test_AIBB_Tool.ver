@@ -16,6 +16,9 @@ logs/
 # 실행 로그 (런타임에 생성됨, 커밋 불필요)
 results/
 
+# 임시 커밋 메시지 파일
+COMMIT_MSG.txt
+
 # Project snapshots (auto-generated, stale)
 full_project.txt
 
