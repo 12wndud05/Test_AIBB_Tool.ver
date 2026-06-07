@@ -1,0 +1,8 @@
+# 셸/CGI 스크립트는 항상 LF로 체크아웃. (Windows에서 CRLF로 바뀌면
+# 컨테이너 안에서 셰뱅이 "...bash\r" 가 되어 exec 실패 -> CGI 500.)
+*.cgi text eol=lf
+*.sh  text eol=lf
+*.bash text eol=lf
+
+# 기본: 텍스트 자동 정규화(저장은 LF)
+* text=auto

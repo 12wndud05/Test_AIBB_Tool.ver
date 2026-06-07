@@ -103,7 +103,7 @@ class AIBB:
         if result.get('success'):
             print(f"  {target_name}: SUCCESS")
             print(f"  Flag : {result['flag']}")
-            print(f"  Attempts: {result.get('attempts')}")
+            print(f"  Iterations: {result.get('iterations', result.get('attempts'))}")
         else:
             print(f"  {target_name}: FAIL")
             print(f"  Total attempts: {result.get('total_attempts', '?')}")

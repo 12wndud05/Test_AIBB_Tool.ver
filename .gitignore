@@ -13,6 +13,9 @@ venv/
 logs/
 *.log
 
+# 실행 로그 (런타임에 생성됨, 커밋 불필요)
+results/
+
 # Project snapshots (auto-generated, stale)
 full_project.txt
 
